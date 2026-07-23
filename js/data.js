@@ -84,7 +84,7 @@ const ACHIEVEMENTS = [
 ];
 
 const STATS = [
-  { value: 20, suffix: "+", label: "Technologies" },
+  { value: 5, suffix: "+", label: "Technologies" },
   { value: 2, suffix: "", label: "Projects" },
   { value: 1, suffix: "+", label: "Years Learning" },
   { value: 100, suffix: "%", label: "Passion" },
