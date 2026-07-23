@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Danidu Wijegunawardhana — Software Engineer Portfolio</title>
+<meta name="description" content="Software Engineering undergraduate crafting modern, scalable, user-friendly software. Portfolio, projects, skills, and contact." />
+<meta name="author" content="Danidu Wijegunawardhana" />
+<meta property="og:title" content="Danidu Wijegunawardhana — Software Engineer" />
+<meta property="og:description" content="Portfolio of Danidu Wijegunawardhana: projects, skills, and experience." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="spinner"><div class="ring1"></div><div class="ring2"></div></div>
+    <div class="loader-text text-gradient">Loading Portfolio…</div>
+  </div>
+</div>
+
+<!-- Ambient background -->
+<div id="scroll-progress"></div>
+<div id="cursor-glow"></div>
+<div id="bg-layer" aria-hidden="true">
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="blob blob--3"></div>
+  <div class="grid-bg" style="position:absolute; inset:0; opacity:0.5;"></div>
+</div>
+
+<!-- Nav -->
+<header id="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">D</span>
+      <span class="brand-name" style="display:none;">Danidu<span class="text-gradient">.dev</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links"></nav>
+    <a href="assets/Danidu_CV.pdf" download="Danidu_CV.pdf" class="btn btn-primary btn-sm nav-cta">
+      <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+      CV
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile glass-strong" id="nav-mobile"></div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section id="home" class="section">
+    <div class="container hero-grid">
+      <div>
+        <div class="reveal">
+          <div class="badge glass"><span class="ping-dot"></span> Available for opportunities</div>
+        </div>
+        <div class="reveal">
+          <h1 class="hero-title">Hi, I'm <br /><span class="text-gradient animate-gradient">Danidu Wijegunawardhana</span></h1>
+        </div>
+        <div class="reveal">
+          <div class="hero-role">Software Engineering Undergraduate</div>
+        </div>
+        <div class="reveal">
+          <div class="hero-typing">
+            <span class="label">I'm a</span>
+            <span class="typed text-gradient" id="typing-text"></span>
+            <span class="cursor animate-blink">|</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="hero-desc">Building modern, scalable, and user-friendly software solutions. Passionate about clean code, thoughtful UI, and shipping real products.</p>
+        </div>
+        <div class="reveal">
+          <div class="hero-actions">
+            <a href="assets/Danidu_CV.pdf" download="Danidu_CV.pdf" class="btn btn-primary">
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost glass">
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              Contact Me
+            </a>
+            <a href="#projects" class="btn btn-ghost glass">
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+              View Projects
+            </a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="hero-socials" id="hero-socials"></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="hero-portrait">
+          <div class="portrait-glow animate-pulse-glow"></div>
+          <div class="portrait-frame glass-strong">
+            <img src="assets/pp.jpeg" alt="Danidu Wijegunawardhana" />
+          </div>
+          <div class="floaty glass animate-float floaty--1">
+            <span><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--primary)"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> &lt;coding /&gt;</span>
+          </div>
+          <div class="floaty glass animate-float floaty--2">
+            <span><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--neon-cyan)"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> About</div>
+        <h2><span class="text-gradient">A little about me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-card glass-strong">
+            <p>I'm <span class="hl">Danidu Wijegunawardhana</span>, a motivated Software Engineering undergraduate at <span class="text-gradient" style="font-weight:600;">Sri Lanka Technology Campus</span>.</p>
+            <p>I have skills in <span style="color:var(--foreground);">Python, Java</span> and desktop GUI development, with a solid foundation in Object-Oriented Programming, Data Structures, and Database Management (MySQL, SQLite).</p>
+            <p>I love turning ideas into working products — from small desktop tools to modern web apps — and I'm eager to bring my technical curiosity into a dynamic software development team.</p>
+            <div class="about-facts">
+              <div class="fact glass"><div class="k">Name</div><div class="v">Danidu Wijegunawardhana</div></div>
+              <div class="fact glass"><div class="k">Location</div><div class="v">Kaluthara, Sri Lanka</div></div>
+              <div class="fact glass"><div class="k">University</div><div class="v">SLTC</div></div>
+              <div class="fact glass"><div class="k">Status</div><div class="v primary">Open to work</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid" id="stats-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Skills</div>
+        <h2><span class="text-gradient">What I work with</span></h2>
+      </div>
+      <div class="subhead"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Technical Skills</div>
+      <div class="skills-grid" id="skills-grid"></div>
+
+      <div class="subhead" style="margin-top:3.5rem;"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Soft Skills</div>
+      <div class="soft-skills-grid" id="soft-skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Projects</div>
+        <h2><span class="text-gradient">Things I've built</span></h2>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Education & Experience -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Journey</div>
+        <h2><span class="text-gradient">Education &amp; Experience</span></h2>
+      </div>
+      <div class="journey-grid">
+        <div>
+          <div class="subhead"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg> Education</div>
+          <div class="timeline" id="education-timeline"></div>
+        </div>
+        <div>
+          <div class="subhead"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Experience</div>
+          <div class="exp-list" id="experience-list"></div>
+          <div style="margin-top:2rem;">
+            <div class="subhead"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/><circle cx="12" cy="8" r="7"/></svg> Achievements</div>
+            <div class="achievements-grid" id="achievements-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework -->
+  <section id="coursework" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Learning</div>
+        <h2><span class="text-gradient"> Coursework</span></h2>
+      </div>
+      <div class="cert-grid" id="cert-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <div class="eyebrow glass"><svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg> Contact</div>
+        <h2><span class="text-gradient">Let's build something</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-list" id="contact-list"></div>
+        </div>
+        <div class="reveal">
+          <form class="contact-form glass-strong" id="contact-form">
+            <div class="form-field">
+              <label for="cf-name">Your Name</label>
+              <input id="cf-name" required class="glass" placeholder="John Doe" />
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Your Email</label>
+              <input id="cf-email" required type="email" class="glass" placeholder="john@example.com" />
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" required rows="5" class="glass" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Send Message
+            </button>
+            <div class="form-sent" id="form-sent" style="display:none;">Opening your email client…</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">Danidu<span class="text-gradient">.dev</span></div>
+      <div class="footer-copy" id="footer-copy"></div>
+    </div>
+    <div class="footer-socials" id="footer-socials"></div>
+  </div>
+</footer>
+
+<button id="scroll-top" aria-label="Scroll to top">
+  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- Chatbot (recreated placeholder, see js/chatbot.js) -->
+<button id="chatbot-toggle" aria-label="Open chat assistant">
+  <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
+<div id="chatbot-panel" class="glass-strong">
+  <div class="chatbot-header">
+    <div>Ask about Danidu <div class="sub">Auto-replies from portfolio info</div></div>
+    <button id="chatbot-close" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+  <form class="chatbot-input" id="chatbot-input-form">
+    <input id="chatbot-input" placeholder="Ask a question…" autocomplete="off" />
+    <button type="submit" aria-label="Send">
+      <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+    </button>
+  </form>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
