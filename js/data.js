@@ -16,12 +16,12 @@ const NAV = [
 const TYPING = ["Software Engineer", "Web Developer", "UI/UX Enthusiast", "Problem Solver"];
 
 const TECH_SKILLS = [
-  { name: "HTML", level: 50 },
-   ,
-  ,  { name: "Java", level: 50 },
+  { name: "HTML", level: 70 },
+  { name: "Java", level: 50 },
   { name: "Python", level: 80 },
   { name: "MySQL", level: 50 },
-  { name: "GitHub", level: 50 }, { name: "OOP", level: 50 },
+  { name: "GitHub", level: 60 },
+  { name: "OOP", level: 60 },
  
 ];
 
