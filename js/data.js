@@ -19,7 +19,7 @@ const TECH_SKILLS = [
   { name: "HTML", level: 50 },
    ,
   ,  { name: "Java", level: 50 },
-  { name: "Python", level: 50 },
+  { name: "Python", level: 80 },
   { name: "MySQL", level: 50 },
   { name: "GitHub", level: 50 }, { name: "OOP", level: 50 },
  
